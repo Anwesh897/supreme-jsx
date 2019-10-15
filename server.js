@@ -1,5 +1,5 @@
 const express = require("express");
-const jsx = require("express-react-views").createEngine();
+const jsxView = require("express-react-views").createEngine();
 const app = express();
 
 app.get("/", (req, res) => {
@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.set("view engine", "jsx");
-app.engine("jsx", jsx);
+app.engine("jsx", jsxView);
 app.get("/about", (req, res) => {
   res.render("about", { name: "Anwesh" });
 });
