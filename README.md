@@ -1,1 +1,3 @@
-# supreme-jsx practice session for using expressand jsx as template engine
+# supreme-jsx
+
+practice session for express using jsx as template engine
