@@ -12,6 +12,16 @@ app.get("/about", (req, res) => {
   res.render("about", { name: "Anwesh" });
 });
 
+app.post("/about", (req, res) => {
+  res.json({
+    data: {
+      name: "Anwesh Korram",
+      Age: 23,
+      Hobbies: "Reading books , Playing and Composing Music"
+    }
+  });
+});
+
 app.get("/thoughts", (req, res) => {
   res.render("thoughts");
 });

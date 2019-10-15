@@ -8,6 +8,7 @@ class Hello extends React.Component {
         Hello from {this.props.name}
         <Greetings />
         <Poem />
+        <Color />
       </div>
     );
   }
@@ -30,4 +31,19 @@ class Poem extends React.Component {
     );
   }
 }
-module.exports = Hello;
+
+class Color extends React.Component {
+  render() {
+    const myStyle = {
+      fontSize: 100,
+      color: "#FF0000"
+    };
+    return (
+      <div>
+        <h3 style={myStyle}>Header</h3>
+      </div>
+    );
+  }
+}
+
+export default Hello;

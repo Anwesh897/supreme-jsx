@@ -13,4 +13,4 @@ class Thought extends React.Component {
   }
 }
 
-module.exports = Thought;
+export default Thought;
